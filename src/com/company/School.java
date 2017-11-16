@@ -11,29 +11,30 @@ public class School {
     public int SATWriting;
     public double average;
     public String Name = "";
-    public School(String scores){
-        String temp = "";
-        if (scores.lastIndexOf("%") != -1 && scores.lastIndexOf("%") == scores.length()-1) {
+
+    public School(String scores) {
+       /* String temp = "";
+        if (scores.lastIndexOf("%") != -1 && scores.lastIndexOf("%") == scores.length() - 1) {
             temp = scores.substring(0, scores.lastIndexOf("%") - 5);
             System.out.println(temp);
-            temp = temp.substring(temp.lastIndexOf("%")+2);
+            temp = temp.substring(temp.lastIndexOf("%") + 2);
             System.out.println(temp);
 
             Scanner sc = new Scanner(temp);
 
-
+            if (sc.hasNext()) {
                 SATMath = sc.nextInt();
                 SATReading = sc.nextInt();
                 SATWriting = sc.nextInt();
+            }
 
-        }
-        else {
+        } else {
             SATReading = 0;
             SATWriting = 0;
             SATMath = 0;
-        }
-        average = (Math.round((SATMath + SATReading + SATWriting)/3));
-
+        }*/
+        String[] temp = scores.spl
+        average = ((SATMath + SATReading + SATWriting));
 
 
     }
