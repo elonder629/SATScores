@@ -15,8 +15,9 @@ public class Main {
             maxIndx++;
             abc[maxIndx] = input.nextLine();
         }
-        maxIndx = 0;
-        for (int j = 0; j <= maxIndx; j++){
+
+        for (int j = 1; j <= maxIndx; j++){
+
 
             schools[j] = new School(abc[j]);
             maxIndx++;
