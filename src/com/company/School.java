@@ -11,28 +11,9 @@ public class School {
     public int SATWriting;
     public double average;
     public String Name = "";
+    public  int rank;
 
     public School(String scores) {
-       /* String temp = "";
-        if (scores.lastIndexOf("%") != -1 && scores.lastIndexOf("%") == scores.length() - 1) {
-            temp = scores.substring(0, scores.lastIndexOf("%") - 5);
-            System.out.println(temp);
-            temp = temp.substring(temp.lastIndexOf("%") + 2);
-            System.out.println(temp);
-
-            Scanner sc = new Scanner(temp);
-
-            if (sc.hasNext()) {
-                SATMath = sc.nextInt();
-                SATReading = sc.nextInt();
-                SATWriting = sc.nextInt();
-            }
-
-        } else {
-            SATReading = 0;
-            SATWriting = 0;
-            SATMath = 0;
-        }*/
         String[] temp = scores.split("\t");
 
         if (temp.length < 22) {
@@ -59,11 +40,12 @@ public class School {
         System.out.println(SATReading);
         System.out.println(SATWriting);
         System.out.println(SATMath);
+        System.out.println(average);
         System.out.println(Name);
 
+
     }
-public static int sorter(School[] allSchools){
-        int currentRank = allSchools.length-1;
-        for ()
+
+
 }
-}
+
