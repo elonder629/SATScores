@@ -34,17 +34,23 @@ public class School {
             SATMath = 0;
         }*/
         String[] temp = scores.split("\t");
-        Scanner reading = new Scanner(temp[19]);
-        Scanner math = new Scanner(temp[18]);
-        Scanner writing = new Scanner(temp[20]);
-        if (temp.length < 22 && reading.hasNextInt()) {
+
+        if (temp.length < 22) {
             SATWriting = 0;
             SATMath = 0;
             SATReading = 0;
             Name = temp[1];
-        } else {
-            System.out.println(temp[19]);
-            SATReading = Integer.parseInt(temp[19]);
+        } else if (temp[19].equals("") && temp[18].equals("") && temp[20].equals("")) {
+            SATWriting = 0;
+            SATMath = 0;
+            SATReading = 0;
+            Name = temp[1];
+        }
+        else {
+            Scanner reading = new Scanner(temp[19]);
+            Scanner math = new Scanner(temp[18]);
+            Scanner writing = new Scanner(temp[20]);
+            SATReading = Integer.valueOf(temp[19]);
             SATWriting = Integer.parseInt(temp[20]);
             SATMath = Integer.parseInt(temp[18]);
             Name = temp[1];
@@ -56,4 +62,8 @@ public class School {
         System.out.println(Name);
 
     }
+public static int sorter(School[] allSchools){
+        int currentRank = allSchools.length-1;
+        for ()
+}
 }
