@@ -20,7 +20,7 @@ public class Main {
             schools.add(j, new School(abc[j + 1]));
         }
 
-        Collections.sort(schools, (s1, s2) ->
+        schools.sort( (s1, s2) ->
                 Integer.compare(s2.average, s1.average));
         int max = 0;
         for (School x : schools) {

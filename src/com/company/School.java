@@ -5,13 +5,11 @@ package com.company;
  * Created by el693 on 11/10/17.
  */
 public class School {
-    public int SATMath;
-    public int SATReading;
-    public int SATWriting;
+    private int SATMath;
+    private int SATReading;
+    private int SATWriting;
     public int average;
     public String Name = "";
-
-
     public School(String scores) {
         String[] temp = scores.split("\t");
 
